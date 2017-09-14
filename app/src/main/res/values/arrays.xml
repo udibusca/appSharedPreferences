@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="fotos">
+        <item>@drawable/elefante</item>
+        <item>@drawable/gnu</item>
+        <item>@drawable/leao</item>
+        <item>@drawable/lobo</item>
+        <item>@drawable/panda</item>
+        <item>@drawable/tigre</item>
+        <item>@drawable/cachorro</item>
+        <item>@drawable/macaco</item>
+    </array>
+</resources>
