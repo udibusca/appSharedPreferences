@@ -12,30 +12,32 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    List<Animal> animais;
-    AnimalAdapter adapter;
+    List<Pais> paises;
+    PaisAdapter adapter;
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         listView = new ListView(this);
         setContentView(listView);
-        animais = new ArrayList<Animal>();
-        animais.add(new Animal("Elefante",0));
-        animais.add(new Animal("Gnu",1));
-        animais.add(new Animal("Leão",2));
-        animais.add(new Animal("Lobo",3));
-        animais.add(new Animal("Panda",4));
-        animais.add(new Animal("Tigre",5));
-        animais.add(new Animal("Cachorro",6));
-        animais.add(new Animal("Macaco",7));
-        listView.setAdapter(new AnimalAdapter(this,animais));
+        paises = new ArrayList<Pais>();
+        paises.add(new Pais(1,"China",1354040000,0));
+        paises.add(new Pais(2,"India",1210913422,1));
+        paises.add(new Pais(3,"United State",315761000,2));
+        paises.add(new Pais(4,"Indonesia",237461326,3));
+        paises.add(new Pais(5,"Brazil",1934567,4));
+        paises.add(new Pais(6,"Pakistan",1764555,5));
+        paises.add(new Pais(7,"Nigeria",897226,6));
+        paises.add(new Pais(8,"Bangladesh",767858,7));
+        paises.add(new Pais(9,"Russia",998765,8));
+        paises.add(new Pais(10,"Japan",76543,9));
+        listView.setAdapter(new PaisAdapter(this,paises));
         listView.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Animal animal = (Animal) adapterView.getItemAtPosition(i);
-        Toast.makeText(this,animal.nome, Toast.LENGTH_SHORT).show();
+        Pais pais = (Pais) adapterView.getItemAtPosition(i);
+        Toast.makeText(this,pais.country, Toast.LENGTH_SHORT).show();
     }
 }

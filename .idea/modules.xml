@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Aula11.iml" filepath="$PROJECT_DIR$/Aula11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula-SharedPreferencesListView.iml" filepath="$PROJECT_DIR$/Aula-SharedPreferencesListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

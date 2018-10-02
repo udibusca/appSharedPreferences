@@ -15,11 +15,11 @@ import java.util.List;
  * Created by angoti on 13/09/2017.
  */
 
-public class AnimalAdapter extends BaseAdapter {
+public class PaisAdapter extends BaseAdapter {
     Context ctx;
-    List<Animal> lista;
+    List<Pais> lista;
 
-    public AnimalAdapter(Context ctx, List<Animal> lista) {
+    public PaisAdapter(Context ctx, List<Pais> lista) {
         this.ctx = ctx;
         this.lista = lista;
     }
@@ -42,18 +42,22 @@ public class AnimalAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         //1º passo
-        Animal animal = lista.get(i);
+        Pais pais = lista.get(i);
 
         //2º passo
         View linha = LayoutInflater.from(ctx).inflate(R.layout.linha,null);
 
         //3º passo
+        TextView txrank = (TextView) linha.findViewById(R.id.textRank);
+        TextView txpais = (TextView) linha.findViewById(R.id.textPais);
+        TextView txpopulacao = (TextView) linha.findViewById(R.id.textPopulacao);
         ImageView img = (ImageView) linha.findViewById(R.id.imageView);
-        TextView nome = (TextView) linha.findViewById(R.id.textView);
 
         TypedArray fotos = ctx.getResources().obtainTypedArray(R.array.fotos);
-        img.setImageDrawable(fotos.getDrawable(animal.foto));
-        nome.setText(animal.nome);
+        txrank.setText("Rank : "+pais.rank);
+        txpais.setText(("Country : "+pais.country));
+        txpopulacao.setText("Population : "+pais.population);
+        img.setImageDrawable(fotos.getDrawable(pais.foto));
 
         return linha;
     }

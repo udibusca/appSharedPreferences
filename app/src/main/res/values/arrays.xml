@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="fotos">
-        <item>@drawable/elefante</item>
-        <item>@drawable/gnu</item>
-        <item>@drawable/leao</item>
-        <item>@drawable/lobo</item>
-        <item>@drawable/panda</item>
-        <item>@drawable/tigre</item>
-        <item>@drawable/cachorro</item>
-        <item>@drawable/macaco</item>
+        <item>@drawable/china</item>
+        <item>@drawable/india</item>
+        <item>@drawable/usa</item>
+        <item>@drawable/indonesia</item>
+        <item>@drawable/brasil</item>
+        <item>@drawable/paquistao</item>
+        <item>@drawable/nigeria</item>
+        <item>@drawable/bangladesh</item>
+        <item>@drawable/russia</item>
+        <item>@drawable/japan</item>
     </array>
 </resources>
